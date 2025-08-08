@@ -40,7 +40,7 @@ class _DonationFormPageState extends State<DonationFormPage> {
   }
 
   void enviarDados() async {
-    final url = Uri.parse('http://localhost:8080/doacao');
+    final url = Uri.parse('http://10.0.2.2:8080/doacao');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
@@ -50,8 +50,8 @@ class _DonationFormPageState extends State<DonationFormPage> {
         'genero': genero,
         'autor': autor,
         'descricao': descricao,
-        'email': email,               // enviando o email
-        'imagem': imagemBase64,       // base64 sem prefixo
+        'email': email,               
+        'imagem': imagemBase64,       
       }),
     );
 

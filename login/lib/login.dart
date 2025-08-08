@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     setState(() => _isLoading = true);
 
-    final url = Uri.parse('http://localhost:8080/auth/login'); 
+    final url = Uri.parse('http://10.0.2.2:8080/auth/login'); 
     // Se estiver em emulador Android use 'http://10.0.2.2:8080/auth/login'
 
     final body = jsonEncode({

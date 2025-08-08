@@ -81,7 +81,7 @@ class _CadastroScreenState extends State<CadastroScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://localhost:8080/auth/register'), // Use 10.0.2.2 no Android Emulator
+        Uri.parse('http://10.0.2.2:8080/auth/register'), // Use 10.0.2.2 no Android Emulator
         headers: {'Content-Type': 'application/json'},
         body: json.encode(body),
       );
